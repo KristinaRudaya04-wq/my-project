@@ -55,134 +55,118 @@
 
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Revo Coffee — Персонализированный кофе</title>
   <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
- <header class="header">
-  <div class="header__logo">
-    <img src="assets/img/LOGO.png" alt="Логотип Revo Coffee">
+<header class="header">
+  <div class="header__top">
+    <div class="header__logo">
+      <img src="assets/img/LOGO.png" alt="Revo Coffee">
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#">Главная</a></li>
+        <li><a class="nav__link" href="#">Кофе</a></li>
+        <li><a class="nav__link" href="#">Аксессуары</a></li>
+        <li><a class="nav__link" href="#">Подарки</a></li>
+        <li><a class="nav__link" href="#">Комбо</a></li>
+        <li><a class="nav__link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <h1 class="header__title">ВАШ ПЕРСОНАЛИЗИРОВАННЫЙ КОФЕ</h1>
+  <div class="header__hero">
+    <h1 class="header__title">
+      YOUR <br>
+      PERSONALIZED <br>
+      COFFEE
+    </h1>
 
-  <img class="header__banner" src="assets/img/banner.png" alt="баннер">
-
-  <nav class="nav header__nav">
-    <img class="nav__cart" src="assets/icons/shop_cart.png" alt="">
-    <ul class="nav__list">
-      <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
-      ...
-    </ul>
-  </nav>
+    <img class="header__banner" src="assets/img/banner.png" alt="">
+  </div>
 </header>
 
-  <main>
+<main>
 
-    <!-- COFFEE BUILD YOUR BASE -->
-    <section>
-      <p>Ваш Персонализированный Кофе</p>
-      <h2>КОФЕ СОЗДАЕТ ОСНОВУ</h2>
+<!-- FEATURES -->
+<section class="features">
+  <p class="features__subtitle">Your Personalized Coffee</p>
+  <h2 class="features__title">COFFEE BUILD YOUR BASE</h2>
 
-      <div>
-
-        <article>
-          <img src="assets/icons/mag.png" alt="Иконка кофейный магазин">
-          <h3>Происхождение</h3>
-          <p>Эти кофейные зерна арабики и&nbsp;робусты соответствуют международным стандартам качества.</p>
-        </article>
-
-        <article>
-          <img src="assets/icons/beans.png" alt="Иконка вывеска с кофейными зернами">
-          <h3>Качество</h3>
-          <p>Каждое кофейное зерно&nbsp;&mdash; результат тщательного процесса, проводимого опытным мастером-кофеваром.
-          </p>
-        </article>
-
-        <article>
-          <img src="assets/icons/beans_pack.png" alt="Иконка пачка кофе">
-          <h3>Зерна</h3>
-          <p>70% качества чашки кофе зависит от&nbsp;происхождения и&nbsp;качества зеленых зерен.</p>
-        </article>
-
-        <article>
-          <img src="assets/icons/IC_cofee_machine.png" alt="Иконка кофемашина">
-          <h3>Заваривание</h3>
-          <p>Кофейные зерна проходят тщательную и&nbsp;строгую процедуру обжарки и&nbsp;помола.</p>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- CHOOSE YOUR FAVORITE -->
-    <section class="products">
-  <p class="products__subtitle">Выбери своего фаворита</p>
-  <h2 class="products__title">ИДЕАЛЬНЫЙ ВКУС</h2>
-
-  <div class="products__list">
-
-    <article class="product-card">
-      <img
-        class="product-card__image"
-        src="assets/img/revo_orange.png"
-        alt="REVO Утро"
-      >
-
-      <div class="product-card__content">
-        <p class="product-card__price">99.000</p>
-        <h3 class="product-card__title">REVO Утро</h3>
-        <p class="product-card__text">
-          Горькое, сладкое послевкусие, цветочный аромат.
-        </p>
-
-        <div class="product-card__actions">
-          <button class="btn">КУПИТЬ СЕЙЧАС</button>
-          <button class="btn btn--outline">ДЕТАЛИ</button>
-        </div>
-      </div>
+  <div class="features__list">
+    <article class="feature">
+      <img class="feature__icon" src="assets/icons/mag.png" alt="">
+      <h3 class="feature__title">Nguồn gốc</h3>
+      <p class="feature__text">Lorem ipsum dolor sit amet consectetur.</p>
     </article>
 
-    <article class="product-card">
-      <img
-        class="product-card__image"
-        src="assets/img/revo_orange.png"
-        alt="REVO Каждый день"
-      >
-
-      <div class="product-card__content">
-        <p class="product-card__price">85.000</p>
-        <h3 class="product-card__title">REVO Каждый день</h3>
-        <p class="product-card__text">
-          Сбалансированный вкус, шоколадный аромат.
-        </p>
-
-        <div class="product-card__actions">
-          <button class="btn">КУПИТЬ СЕЙЧАС</button>
-          <button class="btn btn--outline">ДЕТАЛИ</button>
-        </div>
-      </div>
+    <article class="feature">
+      <img class="feature__icon" src="assets/icons/beans.png" alt="">
+      <h3 class="feature__title">Chất lượng</h3>
+      <p class="feature__text">Lorem ipsum dolor sit amet consectetur.</p>
     </article>
 
+    <article class="feature">
+      <img class="feature__icon" src="assets/icons/beans_pack.png" alt="">
+      <h3 class="feature__title">Các loại hạt</h3>
+      <p class="feature__text">Lorem ipsum dolor sit amet consectetur.</p>
+    </article>
+
+    <article class="feature">
+      <img class="feature__icon" src="assets/icons/IC_cofee_machine.png" alt="">
+      <h3 class="feature__title">Pha chế</h3>
+      <p class="feature__text">Lorem ipsum dolor sit amet consectetur.</p>
+    </article>
   </div>
 </section>
 
+<!-- PRODUCTS -->
+<section class="products">
+  <p class="products__subtitle">Choose Your Favorite</p>
+  <h2 class="products__title">CHUẨN GU ĐÚNG VỊ</h2>
 
-  </main>
+  <div class="products__list">
+    <article class="product-card">
+      <img class="product-card__image" src="assets/img/revo_orange.png" alt="">
+      <div class="product-card__content">
+        <p class="product-card__price">99.000</p>
+        <h3 class="product-card__title">REVO Morning</h3>
+        <p class="product-card__text">Lorem ipsum dolor sit amet.</p>
+        <div class="product-card__actions">
+          <button class="btn">MUA NGAY</button>
+          <button class="btn btn--outline">CHI TIẾT</button>
+        </div>
+      </div>
+    </article>
 
-  <footer>
-    <p>© Revo Coffee, 2018</p>
-  </footer>
+    <article class="product-card">
+      <img class="product-card__image" src="assets/img/revo_orange.png" alt="">
+      <div class="product-card__content">
+        <p class="product-card__price">85.000</p>
+        <h3 class="product-card__title">REVO Everyday</h3>
+        <p class="product-card__text">Lorem ipsum dolor sit amet.</p>
+        <div class="product-card__actions">
+          <button class="btn">MUA NGAY</button>
+          <button class="btn btn--outline">CHI TIẾT</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer__copy">© Revo Coffee Việt Nam - 2018</p>
+</footer>
 
 </body>
-
-</html> -->
-
-
-
+</html>
