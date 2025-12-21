@@ -65,24 +65,23 @@
 
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="assets/img/LOGO.png" alt="Логотип Revo Coffee">
-    </div>
-    <h1>ВАШ ПЕРСОНАЛИЗИРОВАННЫЙ КОФЕ</h1>
-    <img src="assets/img/banner.png" alt="баннер главной страницы">
-    <nav>
-      <img src="assets/icons/shop_cart.png" alt="Логотип Revo Coffee">
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Кофе</a></li>
-        <li><a href="#">Аксессуары</a></li>
-        <li><a href="#">Подарки</a></li>
-        <li><a href="#">Комбо</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
+ <header class="header">
+  <div class="header__logo">
+    <img src="assets/img/LOGO.png" alt="Логотип Revo Coffee">
+  </div>
+
+  <h1 class="header__title">ВАШ ПЕРСОНАЛИЗИРОВАННЫЙ КОФЕ</h1>
+
+  <img class="header__banner" src="assets/img/banner.png" alt="баннер">
+
+  <nav class="nav header__nav">
+    <img class="nav__cart" src="assets/icons/shop_cart.png" alt="">
+    <ul class="nav__list">
+      <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+      ...
+    </ul>
+  </nav>
+</header>
 
   <main>
 
@@ -122,135 +121,57 @@
     </section>
 
     <!-- CHOOSE YOUR FAVORITE -->
-    <section>
-      <p>Выбери своего фаворита</p>
-      <h2>ИДЕАЛЬНЫЙ ВКУС</h2>
+    <section class="products">
+  <p class="products__subtitle">Выбери своего фаворита</p>
+  <h2 class="products__title">ИДЕАЛЬНЫЙ ВКУС</h2>
 
-      <article>
-        <img src="assets/img/revo_orange.png" alt="Сорт кофе утро">
-        <div>
-          <p>99.000</p>
-          <h3>REVO Утро</h3>
-          <p>Горькое, сладкое послевкусие, цветочный аромат.</p>
-          <div>
-            <button>КУПИТЬ СЕЙЧАС</button>
-            <button>ДЕТАЛИ</button>
-          </div>
+  <div class="products__list">
+
+    <article class="product-card">
+      <img
+        class="product-card__image"
+        src="assets/img/revo_orange.png"
+        alt="REVO Утро"
+      >
+
+      <div class="product-card__content">
+        <p class="product-card__price">99.000</p>
+        <h3 class="product-card__title">REVO Утро</h3>
+        <p class="product-card__text">
+          Горькое, сладкое послевкусие, цветочный аромат.
+        </p>
+
+        <div class="product-card__actions">
+          <button class="btn">КУПИТЬ СЕЙЧАС</button>
+          <button class="btn btn--outline">ДЕТАЛИ</button>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article>
-        <img src="assets/img/revo_orange.png" alt="Сорт кофе каждый день">
-        <div>
-          <p>85.000</p>
-          <h3>REVO Каждый день</h3>
-          <p>Сбалансированный вкус, горьковатое послевкусие, шоколадный аромат.</p>
-          <div>
-            <button>КУПИТЬ СЕЙЧАС</button>
-            <button>ДЕТАЛИ</button>
-          </div>
+    <article class="product-card">
+      <img
+        class="product-card__image"
+        src="assets/img/revo_orange.png"
+        alt="REVO Каждый день"
+      >
+
+      <div class="product-card__content">
+        <p class="product-card__price">85.000</p>
+        <h3 class="product-card__title">REVO Каждый день</h3>
+        <p class="product-card__text">
+          Сбалансированный вкус, шоколадный аромат.
+        </p>
+
+        <div class="product-card__actions">
+          <button class="btn">КУПИТЬ СЕЙЧАС</button>
+          <button class="btn btn--outline">ДЕТАЛИ</button>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article>
-        <img src="assets/img/revo_orange.png" alt="Сорт кофе начало">
-        <div>
-          <p>139.000</p>
-          <h3>REVO Начало</h3>
-          <p>Сладкое послевкусие, легкая горчинка, клубничная кислинка.</p>
-          <div>
-            <button>КУПИТЬ СЕЙЧАС</button>
-            <button>ДЕТАЛИ</button>
-          </div>
-        </div>
-      </article>
+  </div>
+</section>
 
-      <article>
-        <img src="assets/img/revo_orange.png" alt="Сорт кофе Экстра">
-        <div>
-          <p>75.000</p>
-          <h3>REVO Экстра</h3>
-          <p>Насыщенный, горький, традиционный</p>
-          <div>
-            <button>КУПИТЬ СЕЙЧАС</button>
-            <button>ДЕТАЛИ</button>
-          </div>
-        </div>
-      </article>
-
-    </section>
-
-    <!-- GIFTSET -->
-    <section>
-      <p>Лучший подарок для лучшего друга</p>
-      <h2>Подарочный набор</h2>
-
-      <article>
-        <img src="assets/img/revo_giftset.png" alt="Подарочный набор кофе">
-        <p>285 000 ₽</p>
-        <h3>Подарочный набор «Вьетнамский фильтрованный кофе»</h3>
-        <p>Прекрасный подарок для ценителей кофе. Revo тщательно отбирает кофейные зерна, обжаривает&nbsp;их, используя технологии и&nbsp;секреты, усвоенные от&nbsp;известных мастеров, и&nbsp;сочетает их&nbsp;с&nbsp;любовью и&nbsp;страстью кофеманов, чтобы создавать чистые чашки кофе специально для вас.</p>
-        <div>
-          <div>
-            <img src="assets/icons/IC_coffee.png" alt="Иконка кофейные зерна">
-            <p>Вид зерен<br>Изысканная смесь робусты</p>
-          </div>
-
-          <div>
-            <img src="assets/icons/IC_Mountain.png" alt="Иконка горы">
-            <p>Высота<br>700-800 метров</p>
-          </div>
-        </div>
-        <div>
-          <button>КУПИТЬ СЕЙЧАС</button>
-          <button>ДЕТАЛИ</button>
-        </div>
-
-      </article>
-    </section>
-
-    <!-- COMBO -->
-    <section>
-      <p>Ваш Персонализированный Кофе</p>
-      <h2>Комбо-наборы</h2>
-
-      <article>
-        <img src="assets/img/combo_brown.png" alt="Комбо кофе Экстра">
-        <p>147.000</p>
-        <p>155.000</p>
-        <h3>Combo Dark</h3>
-        <p>Содержание кофеина в&nbsp;Revo Rich Flavor достаточно высокое, чтобы поддерживать вашу бодрость и&nbsp;продуктивность...</p>
-        <div>
-          <button>КУПИТЬ СЕЙЧАС</button>
-          <button>ДЕТАЛИ</button>
-        </div>
-      </article>
-
-      <article>
-        <img src="assets/img/combo_blue.png" alt="Комбо кофе Каждый день">
-        <p>147.000</p>
-        <p>155.000</p>
-        <h3>Combo Dark</h3>
-        <p>Содержание кофеина в&nbsp;Revo Rich Flavor достаточно высокое, чтобы поддерживать вашу бодрость и&nbsp;продуктивность...</p>
-        <div>
-          <button>КУПИТЬ СЕЙЧАС</button>
-          <button>ДЕТАЛИ</button>
-        </div>
-      </article>
-
-      <article>
-        <img src="assets/img/combo_red.png" alt="Комбо кофе Медовое">
-        <p>147.000</p>
-        <p>155.000</p>
-        <h3>Combo Dark</h3>
-        <p>Содержание кофеина в&nbsp;Revo Rich Flavor достаточно высокое, чтобы поддерживать вашу бодрость и&nbsp;продуктивность...</p>
-        <div>
-          <button>КУПИТЬ СЕЙЧАС</button>
-          <button>ДЕТАЛИ</button>
-        </div>
-      </article>
-
-    </section>
 
   </main>
 
