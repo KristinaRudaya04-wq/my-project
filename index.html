@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revo Coffee — Уникальный кофе</title>
+  <title>Мобильный интерфейс</title>
   <link rel="icon" href="assets/icons/favicon.ico">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
 </head>
 
 <body>
@@ -17,11 +18,17 @@
       <div class="header__logo">
         <img class="logo__img" src="assets/img/LOGO.png" alt="Логотип Revo Coffee">
       </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть
+      меню" aria-expanded="false">
+      <span class="menu-toggle__line"></span>
+      <span class="menu-toggle__line"></span>
+      <span class="menu-toggle__line"></span>
+      </button>
       <h1 class="header__title">ВАШ <br><span class="header__titlespan">ПЕРСОНАЛИЗИРОВАННЫЙ</span> <br>КОФЕ</h1>
     </div>
 
     <img class="header__banner" src="assets/img/banner.png" alt="баннер главной страницы">
-    <nav class="header__nav nav">
+    <nav class="header__nav nav" id="mainNav"></nav>
       <img class="nav__icon" src="assets/icons/shop_cart.png" alt="Логотип Revo Coffee">
       <ul class="nav__list">
         <li class="nav__item nav__item--active"><a class="nav__link" href="#">Главная</a></li>
@@ -31,6 +38,8 @@
         <li class="nav__item"><a class="nav__link" href="#combosets">Комбо</a></li>
         <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
       </ul>
+      <!-- Кнопка CTA (только для десктопа) -->
+      <button class="btn btn--primary header__cta">Заказать</button>
     </nav>
   </header>
 
@@ -249,7 +258,8 @@
   <footer id="contacts" class="footer">
     <p class="footer__text">© Revo Coffee, 2025</p>
   </footer>
-
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>
