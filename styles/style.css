@@ -960,4 +960,25 @@ font-size: 10px;
 }
 
 /* Очень маленькие экраны (меньше 400px) */
-@media (max-width: 399px) {}
+@media (max-width: 399px) {}  
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 56px;
+  height: 56px;
+  background: #415167;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
