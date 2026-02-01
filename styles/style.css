@@ -547,6 +547,30 @@ nav {
     color: #fff;
 }
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+}
+
+.menu-toggle__line {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.scroll-top {
+  opacity: 0;
+  visibility: hidden;
+}
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* Ноутбуки (меньше 1200px) */
 @media (max-width: 1199px) {
